@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkatrazes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Основные стили остаются прежними */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #f8f4e6 100%);
+            color: #2c3e50;
+            overflow-y: auto;
+        }
+
+        .header-top {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            padding: 20px 40px;
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons button {
+            background: linear-gradient(135deg, #4ECDC4 0%, #45B7AF 100%);
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .auth-buttons button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hero-section {
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            margin: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: rgba(255, 255, 255, 0.95);
+            border-left: 5px solid #4ECDC4;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight:hover {
+            transform: translateX(10px);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #FFD93D 0%, #FFB830 100%);
+            padding: 50px;
+            text-align: center;
+            margin: 50px 0;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="Logo" class="logo-img">
+            <h2 style="color: white;">Alkatrazes</h2>
+        </div>
+        <div class="auth-buttons">
+            <a href="{{ url_for ('open')}}" class="category"><button>Sign in</button></a>
+            <a href="{{ url_for ('register')}}" class="category"><button>Sign up</button></a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <h1>Добро пожаловать на Alkatrazes!</h1>
+            <p>Ваша площадка для идеальных покупок и продаж</p>
+        </div>
+    </div>
+
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <i class="fas fa-shipping-fast feature-icon"></i>
+            <h3>Быстрая доставка</h3>
+            <p>Надежная и своевременная доставка по всему миру</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h3>Безопасность</h3>
+            <p>Гарантия безопасных сделок и защита платежей</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-percent feature-icon"></i>
+            <h3>Выгодные цены</h3>
+            <p>Специальные предложения и эксклюзивные скидки</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Присоединяйтесь к нашему сообществу!</h2>
+        <p>Присоединяйтесь к Alkatrazes, чтобы открыть свои товары для широкой аудитории. Регистрация проста и занимает всего пару минут. Добавляйте свои товары, управляйте продажами и развивайте свой бизнес вместе с нами!</p>
+    </div>
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <i class="fas fa-barcode feature-icon"></i>
+            
+            <p>Широкий ассортимент — от повседневных товаров до редких эксклюзивов.</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            
+            <p>Открытая платформа — любой пользователь может зарегистрироваться и добавить свои товары для продажи.</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-star feature-icon"></i>
+            
+            <p>Гарантия качества — товары проходят проверку и соответствуют заявленным стандартам.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fas fa-shipping-fast feature-icon"></i>
+            
+            <p>Удобная доставка — быстрое получение заказов в удобное время и место.</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-percent feature-icon"></i>
+            <h3>Выгодные цены</h3>
+            <p>Доступные цены — акции, скидки и выгодные предложения ждут каждого клиента.</p>
+        </div>
+    </div>
+    <!-- Остальной контент и скрипты -->
+</body>
+</html>
+
