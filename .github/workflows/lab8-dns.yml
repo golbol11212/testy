@@ -22,36 +22,31 @@ jobs:
           n=0
           shot () {
             n=$((n+1))
-            cmd="$1"
-            bash -c "$cmd" > out/$n.txt 2>&1 || true
+            printf '%s' "$1" > /tmp/cmd$n
+            bash /tmp/cmd$n > out/$n.txt 2>&1 || true
             rows=$(( $(wc -l < out/$n.txt) + 3 ))
             [ $rows -lt 8 ] && rows=8
-            cat > /tmp/s$n.sh <<EOS
-          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m\$ %s\n' "$cmd"
-          $cmd
-          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m\$ '
+            cat > /tmp/s$n.sh <<'EOS'
+          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m$ %s\n' "$(cat $1)"
+          bash $1
+          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m$ '
           sleep 300
           EOS
-            xterm -geometry 96x$rows -fa 'DejaVu Sans Mono' -fs 10 -bg '#300a24' -fg '#eeeeee' -title "igor@ubuntu: ~" -e bash /tmp/s$n.sh &
+            xterm -geometry 96x$rows -fa 'DejaVu Sans Mono' -fs 10 -bg '#300a24' -fg '#eeeeee' -e bash /tmp/s$n.sh /tmp/cmd$n &
             sleep 6
             wid=$(xdotool search --class xterm | tail -1)
             import -window "$wid" out/$n.png
-            kill %2 2>/dev/null || pkill xterm || true
+            pkill xterm || true
             sleep 1
           }
-          shot "dig www.tk.te.ua"
-          shot "dig ukr.net NS"
-          shot "dig @a.root-servers.net . NS +norec"
-          shot "for s in a b c d e f g h i j k l m; do echo \$s.root-servers.net \$(dig +short \$s.root-servers.net A); done"
-          shot "dig tk.te.ua MX"
-          shot "dig +short mail.tk.te.ua"
+          shot 'for s in a b c d e f g h i j k l m; do echo $s.root-servers.net $(dig +short $s.root-servers.net A); done'
           dig -v > out/version.txt 2>&1; date -u > out/date.txt
           ls -la out
       - name: Save results
         run: |
           git config user.name "lab8-bot"; git config user.email "lab8@example.com"
-          git checkout --orphan lab8-dns-results
+          git checkout --orphan lab8-dns-results2
           git rm -rf --cached . >/dev/null
           git add out
           git commit -qm "lab8 results"
-          git push -f origin lab8-dns-results
+          git push -f origin lab8-dns-results2
