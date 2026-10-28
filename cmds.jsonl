@@ -1,14 +1,3 @@
-{"op": "click", "x": 816, "y": 55, "id": 491}
-{"op": "wait", "s": 2, "id": 492}
-{"op": "move", "x": 1010, "y": 700, "id": 493}
-{"op": "wait", "s": 1, "id": 494}
-{"op": "shot", "name": "23_manage_menu", "id": 495}
-{"op": "click", "x": 886, "y": 81, "id": 496}
-{"op": "move", "x": 1010, "y": 700, "id": 497}
-{"op": "wait", "s": 6, "id": 498}
-{"op": "shot", "name": "24_wizard_begin", "id": 499}
-{"op": "click", "x": 570, "y": 564, "id": 500}
-{"op": "move", "x": 1010, "y": 700, "id": 501}
 {"op": "wait", "s": 3, "id": 502}
 {"op": "shot", "name": "25_wizard_type", "id": 503}
 {"op": "click", "x": 570, "y": 564, "id": 504}
@@ -58,3 +47,14 @@
 {"op": "type", "text": "dnsmgmt.msc\n", "gap": 0.03, "id": 548}
 {"op": "wait", "s": 6, "id": 549}
 {"op": "move", "x": 1010, "y": 700, "id": 550}
+{"op": "click", "x": 300, "y": 61, "double": true, "id": 551}
+{"op": "wait", "s": 2, "id": 552}
+{"op": "click", "x": 140, "y": 120, "id": 553}
+{"op": "key", "keys": ["right"], "id": 554}
+{"op": "wait", "s": 2, "id": 555}
+{"op": "key", "keys": ["down", "right"], "id": 556}
+{"op": "wait", "s": 2, "id": 557}
+{"op": "key", "keys": ["down", "down"], "id": 558}
+{"op": "wait", "s": 2, "id": 559}
+{"op": "move", "x": 1010, "y": 700, "id": 560}
+{"op": "wait", "s": 1, "id": 561}
