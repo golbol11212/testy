@@ -447,3 +447,15 @@
 {"op": "type", "text": "Test-Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending\"; Get-Process TiWorker -ErrorAction SilentlyContinue | select CPU\n", "gap": 0.03, "id": 1367}
 {"op": "wait", "s": 5, "id": 1368}
 {"op": "type", "text": "while(Get-Process TiWorker -EA 0){sleep 15}; Restart-Computer -Force\n", "gap": 0.05, "id": 1369}
+{"op": "key", "keys": [["ctrl", "alt", "delete"]], "id": 1370}
+{"op": "wait", "s": 3, "id": 1371}
+{"op": "type", "text": "Igor#Srv2026", "gap": 0.12, "id": 1372}
+{"op": "key", "keys": ["ret"], "id": 1373}
+{"op": "wait", "s": 60, "id": 1374}
+{"op": "key", "keys": [["meta_l", "r"]], "id": 1375}
+{"op": "wait", "s": 2, "id": 1376}
+{"op": "type", "text": "ms-settings:windowsupdate\n", "id": 1377}
+{"op": "wait", "s": 6, "id": 1378}
+{"op": "click", "x": 461, "y": 247, "id": 1379}
+{"op": "move", "x": 1010, "y": 700, "id": 1380}
+{"op": "wait", "s": 60, "id": 1381}
