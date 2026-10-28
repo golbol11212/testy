@@ -1,11 +1,3 @@
-{"op": "move", "x": 1010, "y": 760, "id": 361}
-{"op": "wait", "s": 30, "id": 362}
-{"op": "shot", "name": "10_lockscreen", "id": 363}
-{"op": "key", "keys": [["ctrl", "alt", "delete"]], "id": 364}
-{"op": "wait", "s": 3, "id": 365}
-{"op": "type", "text": "Start#2026", "gap": 0.12, "id": 366}
-{"op": "wait", "s": 1, "id": 367}
-{"op": "shot", "name": "11_login", "id": 368}
 {"op": "key", "keys": ["ret"], "id": 369}
 {"op": "wait", "s": 90, "id": 370}
 {"op": "click", "x": 828, "y": 372, "id": 371}
@@ -58,3 +50,11 @@
 {"op": "key", "keys": ["ret"], "id": 418}
 {"op": "wait", "s": 4, "id": 419}
 {"op": "shot", "name": "15_password_changed", "id": 420}
+{"op": "key", "keys": ["ret"], "id": 421}
+{"op": "wait", "s": 5, "id": 422}
+{"op": "key", "keys": [["meta_l", "r"]], "id": 423}
+{"op": "wait", "s": 2, "id": 424}
+{"op": "type", "text": "powershell\n", "id": 425}
+{"op": "wait", "s": 6, "id": 426}
+{"op": "type", "text": "tzutil /s \"FLE Standard Time\"; Get-TimeZone; ipconfig /all | Select-String \"IPv4|Mask|Gateway|DNS Servers|Description|DHCP Enabled\"; Test-NetConnection 8.8.8.8 -Port 53 | Select TcpTestSucceeded\n", "gap": 0.03, "id": 427}
+{"op": "wait", "s": 12, "id": 428}
