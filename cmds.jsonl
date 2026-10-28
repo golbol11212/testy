@@ -5,3 +5,5 @@
 {"op": "wait", "s": 1, "id": 4}
 {"op": "key", "keys": ["tab"], "id": 5}
 {"op": "wait", "s": 1, "id": 6}
+{"op": "type", "text": "US", "gap": 0.1, "id": 7}
+{"op": "wait", "s": 1, "id": 8}
