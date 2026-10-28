@@ -420,3 +420,11 @@
 {"op": "type", "text": "ms-settings:windowsupdate\n", "id": 1340}
 {"op": "wait", "s": 6, "id": 1341}
 {"op": "move", "x": 1010, "y": 700, "id": 1342}
+{"op": "click", "x": 461, "y": 247, "id": 1343}
+{"op": "move", "x": 1010, "y": 700, "id": 1344}
+{"op": "wait", "s": 60, "id": 1345}
+{"op": "shot", "name": "44_wu_uptodate", "id": 1346}
+{"op": "click", "x": 500, "y": 538, "id": 1347}
+{"op": "move", "x": 1010, "y": 700, "id": 1348}
+{"op": "wait", "s": 5, "id": 1349}
+{"op": "shot", "name": "45_wu_history", "id": 1350}
