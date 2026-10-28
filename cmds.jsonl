@@ -7,3 +7,7 @@
 {"op": "wait", "s": 1, "id": 6}
 {"op": "type", "text": "US", "gap": 0.1, "id": 7}
 {"op": "wait", "s": 1, "id": 8}
+{"op": "shot", "name": "02_lang_region", "id": 9}
+{"op": "click", "x": 770, "y": 551, "id": 10}
+{"op": "wait", "s": 4, "id": 11}
+{"op": "shot", "name": "03_install_now", "id": 12}
