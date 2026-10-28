@@ -1,9 +1,3 @@
-{"op": "wait", "s": 3, "id": 502}
-{"op": "shot", "name": "25_wizard_type", "id": 503}
-{"op": "click", "x": 570, "y": 564, "id": 504}
-{"op": "move", "x": 1010, "y": 700, "id": 505}
-{"op": "wait", "s": 3, "id": 506}
-{"op": "shot", "name": "26_wizard_server", "id": 507}
 {"op": "click", "x": 570, "y": 564, "id": 508}
 {"op": "move", "x": 1010, "y": 700, "id": 509}
 {"op": "wait", "s": 4, "id": 510}
@@ -58,3 +52,9 @@
 {"op": "wait", "s": 2, "id": 559}
 {"op": "move", "x": 1010, "y": 700, "id": 560}
 {"op": "wait", "s": 1, "id": 561}
+{"op": "click", "x": 32, "y": 122, "id": 562}
+{"op": "wait", "s": 2, "id": 563}
+{"op": "click", "x": 95, "y": 140, "id": 564}
+{"op": "wait", "s": 3, "id": 565}
+{"op": "move", "x": 1010, "y": 700, "id": 566}
+{"op": "wait", "s": 1, "id": 567}
