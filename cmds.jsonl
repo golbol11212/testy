@@ -459,3 +459,15 @@
 {"op": "click", "x": 461, "y": 247, "id": 1379}
 {"op": "move", "x": 1010, "y": 700, "id": 1380}
 {"op": "wait", "s": 60, "id": 1381}
+{"op": "shot", "name": "47_wu_uptodate", "id": 1382}
+{"op": "click", "x": 500, "y": 538, "id": 1383}
+{"op": "move", "x": 1010, "y": 700, "id": 1384}
+{"op": "wait", "s": 6, "id": 1385}
+{"op": "shot", "name": "48_wu_history", "id": 1386}
+{"op": "key", "keys": [["meta_l", "r"]], "id": 1387}
+{"op": "wait", "s": 2, "id": 1388}
+{"op": "type", "text": "powershell\n", "id": 1389}
+{"op": "wait", "s": 7, "id": 1390}
+{"op": "type", "text": "cls; Get-HotFix | ft HotFixID,Description,InstalledOn -AutoSize; Get-CimInstance Win32_OperatingSystem | fl Caption,Version,BuildNumber; net user Administrator | findstr /i \"name last\"\n", "gap": 0.03, "id": 1391}
+{"op": "wait", "s": 15, "id": 1392}
+{"op": "shot", "name": "49_hotfix", "id": 1393}
