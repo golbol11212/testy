@@ -1,13 +1,3 @@
-{"op": "shot", "name": "burst/b120", "id": 281}
-{"op": "wait", "s": 2, "id": 282}
-{"op": "shot", "name": "burst/b121", "id": 283}
-{"op": "wait", "s": 2, "id": 284}
-{"op": "shot", "name": "burst/b122", "id": 285}
-{"op": "wait", "s": 2, "id": 286}
-{"op": "shot", "name": "burst/b123", "id": 287}
-{"op": "wait", "s": 2, "id": 288}
-{"op": "shot", "name": "burst/b124", "id": 289}
-{"op": "wait", "s": 2, "id": 290}
 {"op": "shot", "name": "burst/b125", "id": 291}
 {"op": "wait", "s": 2, "id": 292}
 {"op": "shot", "name": "burst/b126", "id": 293}
@@ -58,3 +48,13 @@
 {"op": "wait", "s": 2, "id": 338}
 {"op": "shot", "name": "burst/b149", "id": 339}
 {"op": "wait", "s": 2, "id": 340}
+{"op": "shot", "name": "09_oobe_password_empty", "id": 341}
+{"op": "click", "x": 376, "y": 307, "id": 342}
+{"op": "type", "text": "Start#2026", "id": 343}
+{"op": "click", "x": 376, "y": 354, "id": 344}
+{"op": "type", "text": "Start#2026", "id": 345}
+{"op": "move", "x": 1010, "y": 760, "id": 346}
+{"op": "wait", "s": 1, "id": 347}
+{"op": "shot", "name": "09_oobe_password", "id": 348}
+{"op": "click", "x": 899, "y": 670, "id": 349}
+{"op": "wait", "s": 40, "id": 350}
