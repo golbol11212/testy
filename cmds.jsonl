@@ -440,3 +440,9 @@
 {"op": "click", "x": 148, "y": 258, "id": 1360}
 {"op": "move", "x": 1010, "y": 700, "id": 1361}
 {"op": "wait", "s": 5, "id": 1362}
+{"op": "key", "keys": [["meta_l", "r"]], "id": 1363}
+{"op": "wait", "s": 2, "id": 1364}
+{"op": "type", "text": "powershell\n", "id": 1365}
+{"op": "wait", "s": 6, "id": 1366}
+{"op": "type", "text": "Test-Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending\"; Get-Process TiWorker -ErrorAction SilentlyContinue | select CPU\n", "gap": 0.03, "id": 1367}
+{"op": "wait", "s": 5, "id": 1368}
