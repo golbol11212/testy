@@ -402,3 +402,11 @@
 {"op": "shot", "name": "burst/b169", "id": 1322}
 {"op": "wait", "s": 1.5, "id": 1323}
 {"op": "shell", "cmd": "rm -rf /mnt/vm/out/shots/burst", "id": 1324}
+{"op": "key", "keys": [["ctrl", "alt", "delete"]], "id": 1325}
+{"op": "wait", "s": 3, "id": 1326}
+{"op": "type", "text": "Igor#Srv2026", "gap": 0.12, "id": 1327}
+{"op": "wait", "s": 1, "id": 1328}
+{"op": "shot", "name": "41_login_newpass", "id": 1329}
+{"op": "key", "keys": ["ret"], "id": 1330}
+{"op": "wait", "s": 60, "id": 1331}
+{"op": "move", "x": 1010, "y": 700, "id": 1332}
