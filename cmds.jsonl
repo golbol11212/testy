@@ -1,41 +1,60 @@
-{"id": 0, "op": "wait", "s": 1}
-{"op": "shot", "name": "01_boot_lang_initial", "id": 1}
-{"op": "key", "keys": ["tab"], "id": 2}
-{"op": "type", "text": "Ukrainian", "gap": 0.15, "id": 3}
-{"op": "wait", "s": 1, "id": 4}
-{"op": "key", "keys": ["tab"], "id": 5}
-{"op": "wait", "s": 1, "id": 6}
-{"op": "type", "text": "US", "gap": 0.1, "id": 7}
-{"op": "wait", "s": 1, "id": 8}
-{"op": "shot", "name": "02_lang_region", "id": 9}
-{"op": "click", "x": 770, "y": 551, "id": 10}
-{"op": "wait", "s": 4, "id": 11}
-{"op": "shot", "name": "03_install_now", "id": 12}
-{"op": "move", "x": 1010, "y": 760, "id": 13}
-{"op": "shot", "name": "03_install_now", "id": 14}
-{"op": "click", "x": 511, "y": 391, "id": 15}
-{"op": "move", "x": 1010, "y": 760, "id": 16}
-{"op": "wait", "s": 15, "id": 17}
-{"op": "click", "x": 400, "y": 267, "id": 18}
-{"op": "move", "x": 1010, "y": 760, "id": 19}
-{"op": "wait", "s": 1, "id": 20}
-{"op": "shot", "name": "04_select_edition", "id": 21}
-{"op": "click", "x": 770, "y": 557, "id": 22}
-{"op": "move", "x": 1010, "y": 760, "id": 23}
-{"op": "wait", "s": 4, "id": 24}
-{"op": "click", "x": 247, "y": 518, "id": 25}
-{"op": "move", "x": 1010, "y": 760, "id": 26}
-{"op": "wait", "s": 1, "id": 27}
-{"op": "shot", "name": "05_license", "id": 28}
-{"op": "click", "x": 770, "y": 557, "id": 29}
-{"op": "move", "x": 1010, "y": 760, "id": 30}
-{"op": "wait", "s": 4, "id": 31}
-{"op": "shot", "name": "06_install_type", "id": 32}
-{"op": "click", "x": 450, "y": 330, "id": 33}
-{"op": "move", "x": 1010, "y": 760, "id": 34}
-{"op": "wait", "s": 5, "id": 35}
-{"op": "shot", "name": "07_disk", "id": 36}
-{"op": "click", "x": 770, "y": 557, "id": 37}
-{"op": "move", "x": 1010, "y": 760, "id": 38}
-{"op": "wait", "s": 60, "id": 39}
-{"op": "shot", "name": "08_installing", "id": 40}
+{"op": "shot", "name": "burst/b120", "id": 281}
+{"op": "wait", "s": 2, "id": 282}
+{"op": "shot", "name": "burst/b121", "id": 283}
+{"op": "wait", "s": 2, "id": 284}
+{"op": "shot", "name": "burst/b122", "id": 285}
+{"op": "wait", "s": 2, "id": 286}
+{"op": "shot", "name": "burst/b123", "id": 287}
+{"op": "wait", "s": 2, "id": 288}
+{"op": "shot", "name": "burst/b124", "id": 289}
+{"op": "wait", "s": 2, "id": 290}
+{"op": "shot", "name": "burst/b125", "id": 291}
+{"op": "wait", "s": 2, "id": 292}
+{"op": "shot", "name": "burst/b126", "id": 293}
+{"op": "wait", "s": 2, "id": 294}
+{"op": "shot", "name": "burst/b127", "id": 295}
+{"op": "wait", "s": 2, "id": 296}
+{"op": "shot", "name": "burst/b128", "id": 297}
+{"op": "wait", "s": 2, "id": 298}
+{"op": "shot", "name": "burst/b129", "id": 299}
+{"op": "wait", "s": 2, "id": 300}
+{"op": "shot", "name": "burst/b130", "id": 301}
+{"op": "wait", "s": 2, "id": 302}
+{"op": "shot", "name": "burst/b131", "id": 303}
+{"op": "wait", "s": 2, "id": 304}
+{"op": "shot", "name": "burst/b132", "id": 305}
+{"op": "wait", "s": 2, "id": 306}
+{"op": "shot", "name": "burst/b133", "id": 307}
+{"op": "wait", "s": 2, "id": 308}
+{"op": "shot", "name": "burst/b134", "id": 309}
+{"op": "wait", "s": 2, "id": 310}
+{"op": "shot", "name": "burst/b135", "id": 311}
+{"op": "wait", "s": 2, "id": 312}
+{"op": "shot", "name": "burst/b136", "id": 313}
+{"op": "wait", "s": 2, "id": 314}
+{"op": "shot", "name": "burst/b137", "id": 315}
+{"op": "wait", "s": 2, "id": 316}
+{"op": "shot", "name": "burst/b138", "id": 317}
+{"op": "wait", "s": 2, "id": 318}
+{"op": "shot", "name": "burst/b139", "id": 319}
+{"op": "wait", "s": 2, "id": 320}
+{"op": "shot", "name": "burst/b140", "id": 321}
+{"op": "wait", "s": 2, "id": 322}
+{"op": "shot", "name": "burst/b141", "id": 323}
+{"op": "wait", "s": 2, "id": 324}
+{"op": "shot", "name": "burst/b142", "id": 325}
+{"op": "wait", "s": 2, "id": 326}
+{"op": "shot", "name": "burst/b143", "id": 327}
+{"op": "wait", "s": 2, "id": 328}
+{"op": "shot", "name": "burst/b144", "id": 329}
+{"op": "wait", "s": 2, "id": 330}
+{"op": "shot", "name": "burst/b145", "id": 331}
+{"op": "wait", "s": 2, "id": 332}
+{"op": "shot", "name": "burst/b146", "id": 333}
+{"op": "wait", "s": 2, "id": 334}
+{"op": "shot", "name": "burst/b147", "id": 335}
+{"op": "wait", "s": 2, "id": 336}
+{"op": "shot", "name": "burst/b148", "id": 337}
+{"op": "wait", "s": 2, "id": 338}
+{"op": "shot", "name": "burst/b149", "id": 339}
+{"op": "wait", "s": 2, "id": 340}
