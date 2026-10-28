@@ -34,3 +34,8 @@
 {"op": "click", "x": 450, "y": 330, "id": 33}
 {"op": "move", "x": 1010, "y": 760, "id": 34}
 {"op": "wait", "s": 5, "id": 35}
+{"op": "shot", "name": "07_disk", "id": 36}
+{"op": "click", "x": 770, "y": 557, "id": 37}
+{"op": "move", "x": 1010, "y": 760, "id": 38}
+{"op": "wait", "s": 60, "id": 39}
+{"op": "shot", "name": "08_installing", "id": 40}
