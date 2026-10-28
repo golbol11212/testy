@@ -1,60 +1,60 @@
-{"op": "shot", "name": "28_dns_selected", "id": 518}
-{"op": "click", "x": 570, "y": 564, "id": 519}
-{"op": "move", "x": 1010, "y": 700, "id": 520}
-{"op": "wait", "s": 4, "id": 521}
-{"op": "shot", "name": "29_features", "id": 522}
-{"op": "click", "x": 570, "y": 564, "id": 523}
-{"op": "move", "x": 1010, "y": 700, "id": 524}
-{"op": "wait", "s": 3, "id": 525}
-{"op": "shot", "name": "30_dns_info", "id": 526}
-{"op": "click", "x": 570, "y": 564, "id": 527}
-{"op": "move", "x": 1010, "y": 700, "id": 528}
-{"op": "wait", "s": 3, "id": 529}
-{"op": "shot", "name": "31_confirm", "id": 530}
-{"op": "click", "x": 676, "y": 564, "id": 531}
-{"op": "move", "x": 1010, "y": 700, "id": 532}
-{"op": "wait", "s": 15, "id": 533}
-{"op": "shot", "name": "32_installing_role", "id": 534}
-{"op": "wait", "s": 75, "id": 535}
-{"op": "shot", "name": "33_role_installed", "id": 536}
-{"op": "click", "x": 676, "y": 564, "id": 537}
-{"op": "move", "x": 1010, "y": 700, "id": 538}
-{"op": "wait", "s": 8, "id": 539}
-{"op": "shot", "name": "34_dashboard_dns", "id": 540}
-{"op": "click", "x": 590, "y": 748, "id": 541}
-{"op": "wait", "s": 2, "id": 542}
-{"op": "type", "text": "cls; Get-WindowsFeature DNS; Add-DnsServerPrimaryZone -Name \"igor.local\" -ZoneFile \"igor.local.dns\"; Add-DnsServerResourceRecordA -ZoneName \"igor.local\" -Name \"srv\" -IPv4Address 10.0.2.15; Resolve-DnsName srv.igor.local -Server 127.0.0.1\n", "gap": 0.03, "id": 543}
-{"op": "wait", "s": 12, "id": 544}
-{"op": "shot", "name": "35_dns_ps", "id": 545}
-{"op": "wait", "s": 20, "id": 546}
-{"op": "shot", "name": "35_dns_ps", "id": 547}
-{"op": "type", "text": "dnsmgmt.msc\n", "gap": 0.03, "id": 548}
-{"op": "wait", "s": 6, "id": 549}
-{"op": "move", "x": 1010, "y": 700, "id": 550}
-{"op": "click", "x": 300, "y": 61, "double": true, "id": 551}
-{"op": "wait", "s": 2, "id": 552}
-{"op": "click", "x": 140, "y": 120, "id": 553}
-{"op": "key", "keys": ["right"], "id": 554}
-{"op": "wait", "s": 2, "id": 555}
-{"op": "key", "keys": ["down", "right"], "id": 556}
-{"op": "wait", "s": 2, "id": 557}
-{"op": "key", "keys": ["down", "down"], "id": 558}
-{"op": "wait", "s": 2, "id": 559}
-{"op": "move", "x": 1010, "y": 700, "id": 560}
-{"op": "wait", "s": 1, "id": 561}
-{"op": "click", "x": 32, "y": 122, "id": 562}
-{"op": "wait", "s": 2, "id": 563}
-{"op": "click", "x": 95, "y": 140, "id": 564}
-{"op": "wait", "s": 3, "id": 565}
-{"op": "move", "x": 1010, "y": 700, "id": 566}
-{"op": "wait", "s": 1, "id": 567}
-{"op": "shot", "name": "36_dns_manager", "id": 568}
-{"op": "click", "x": 638, "y": 748, "id": 569}
-{"op": "wait", "s": 3, "id": 570}
-{"op": "move", "x": 1010, "y": 700, "id": 571}
-{"op": "shot", "name": "37_wu_installing", "id": 572}
-{"op": "click", "x": 126, "y": 498, "id": 573}
-{"op": "wait", "s": 3, "id": 574}
-{"op": "click", "x": 148, "y": 258, "id": 575}
-{"op": "move", "x": 1010, "y": 700, "id": 576}
-{"op": "wait", "s": 5, "id": 577}
+{"op": "shot", "name": "burst/b170", "id": 921}
+{"op": "wait", "s": 1.5, "id": 922}
+{"op": "shot", "name": "burst/b171", "id": 923}
+{"op": "wait", "s": 1.5, "id": 924}
+{"op": "shot", "name": "burst/b172", "id": 925}
+{"op": "wait", "s": 1.5, "id": 926}
+{"op": "shot", "name": "burst/b173", "id": 927}
+{"op": "wait", "s": 1.5, "id": 928}
+{"op": "shot", "name": "burst/b174", "id": 929}
+{"op": "wait", "s": 1.5, "id": 930}
+{"op": "shot", "name": "burst/b175", "id": 931}
+{"op": "wait", "s": 1.5, "id": 932}
+{"op": "shot", "name": "burst/b176", "id": 933}
+{"op": "wait", "s": 1.5, "id": 934}
+{"op": "shot", "name": "burst/b177", "id": 935}
+{"op": "wait", "s": 1.5, "id": 936}
+{"op": "shot", "name": "burst/b178", "id": 937}
+{"op": "wait", "s": 1.5, "id": 938}
+{"op": "shot", "name": "burst/b179", "id": 939}
+{"op": "wait", "s": 1.5, "id": 940}
+{"op": "shot", "name": "burst/b180", "id": 941}
+{"op": "wait", "s": 1.5, "id": 942}
+{"op": "shot", "name": "burst/b181", "id": 943}
+{"op": "wait", "s": 1.5, "id": 944}
+{"op": "shot", "name": "burst/b182", "id": 945}
+{"op": "wait", "s": 1.5, "id": 946}
+{"op": "shot", "name": "burst/b183", "id": 947}
+{"op": "wait", "s": 1.5, "id": 948}
+{"op": "shot", "name": "burst/b184", "id": 949}
+{"op": "wait", "s": 1.5, "id": 950}
+{"op": "shot", "name": "burst/b185", "id": 951}
+{"op": "wait", "s": 1.5, "id": 952}
+{"op": "shot", "name": "burst/b186", "id": 953}
+{"op": "wait", "s": 1.5, "id": 954}
+{"op": "shot", "name": "burst/b187", "id": 955}
+{"op": "wait", "s": 1.5, "id": 956}
+{"op": "shot", "name": "burst/b188", "id": 957}
+{"op": "wait", "s": 1.5, "id": 958}
+{"op": "shot", "name": "burst/b189", "id": 959}
+{"op": "wait", "s": 1.5, "id": 960}
+{"op": "shot", "name": "burst/b190", "id": 961}
+{"op": "wait", "s": 1.5, "id": 962}
+{"op": "shot", "name": "burst/b191", "id": 963}
+{"op": "wait", "s": 1.5, "id": 964}
+{"op": "shot", "name": "burst/b192", "id": 965}
+{"op": "wait", "s": 1.5, "id": 966}
+{"op": "shot", "name": "burst/b193", "id": 967}
+{"op": "wait", "s": 1.5, "id": 968}
+{"op": "shot", "name": "burst/b194", "id": 969}
+{"op": "wait", "s": 1.5, "id": 970}
+{"op": "shot", "name": "burst/b195", "id": 971}
+{"op": "wait", "s": 1.5, "id": 972}
+{"op": "shot", "name": "burst/b196", "id": 973}
+{"op": "wait", "s": 1.5, "id": 974}
+{"op": "shot", "name": "burst/b197", "id": 975}
+{"op": "wait", "s": 1.5, "id": 976}
+{"op": "shot", "name": "burst/b198", "id": 977}
+{"op": "wait", "s": 1.5, "id": 978}
+{"op": "shot", "name": "burst/b199", "id": 979}
+{"op": "wait", "s": 1.5, "id": 980}
