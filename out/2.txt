@@ -1,0 +1,33 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> ukr.net NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18290
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 9
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ukr.net.			IN	NS
+
+;; ANSWER SECTION:
+ukr.net.		1800	IN	NS	dns1.fwdcdn.net.
+ukr.net.		1800	IN	NS	dns2.fwdcdn.net.
+ukr.net.		1800	IN	NS	dns3.fwdcdn.net.
+ukr.net.		1800	IN	NS	dns4.fwdcdn.net.
+
+;; ADDITIONAL SECTION:
+dns1.fwdcdn.net.	1800	IN	A	185.136.96.77
+dns1.fwdcdn.net.	1800	IN	AAAA	2a06:fb00:1::1:77
+dns2.fwdcdn.net.	1800	IN	A	185.136.97.77
+dns2.fwdcdn.net.	1800	IN	AAAA	2a06:fb00:1::2:77
+dns3.fwdcdn.net.	1800	IN	A	185.136.98.77
+dns3.fwdcdn.net.	1800	IN	AAAA	2a06:fb00:1::3:77
+dns4.fwdcdn.net.	1800	IN	A	185.136.99.77
+dns4.fwdcdn.net.	1800	IN	AAAA	2a06:fb00:1::4:77
+
+;; Query time: 97 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Oct 28 16:09:45 UTC 2026
+;; MSG SIZE  rcvd: 295
+

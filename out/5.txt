@@ -1,0 +1,30 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> tk.te.ua MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38767
+;; flags: qr rd ra; QUERY: 1, ANSWER: 8, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;tk.te.ua.			IN	MX
+
+;; ANSWER SECTION:
+tk.te.ua.		300	IN	MX	1 aspmx.l.google.com.
+tk.te.ua.		300	IN	MX	10 aspmx2.googlemail.com.
+tk.te.ua.		300	IN	MX	10 aspmx3.googlemail.com.
+tk.te.ua.		300	IN	MX	10 aspmx4.googlemail.com.
+tk.te.ua.		300	IN	MX	10 aspmx5.googlemail.com.
+tk.te.ua.		300	IN	MX	20 _dc-mx.ef3bad0d8cef.tk.te.ua.
+tk.te.ua.		300	IN	MX	5 alt1.aspmx.l.google.com.
+tk.te.ua.		300	IN	MX	5 alt2.aspmx.l.google.com.
+
+;; ADDITIONAL SECTION:
+_dc-mx.ef3bad0d8cef.tk.te.ua. 300 IN	A	109.201.239.24
+
+;; Query time: 171 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Oct 28 16:10:06 UTC 2026
+;; MSG SIZE  rcvd: 268
+

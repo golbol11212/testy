@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> www.tk.te.ua
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45832
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www.tk.te.ua.			IN	A
+
+;; ANSWER SECTION:
+www.tk.te.ua.		300	IN	A	172.67.147.29
+www.tk.te.ua.		300	IN	A	104.21.63.147
+
+;; Query time: 184 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Oct 28 16:09:37 UTC 2026
+;; MSG SIZE  rcvd: 73
+
