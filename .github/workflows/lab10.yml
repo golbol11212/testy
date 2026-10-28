@@ -1,0 +1,46 @@
+name: lab10-winserver
+on:
+  push:
+    branches: [lab10]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  vm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qemu-system-x86 qemu-utils imagemagick ovmf >/dev/null
+          sudo chmod 666 /dev/kvm
+          ls -la /dev/kvm
+          df -h / /mnt
+          free -g; nproc
+          sudo mkdir -p /mnt/vm && sudo chown $USER /mnt/vm
+      - name: Download ISO
+        run: |
+          cd /mnt/vm
+          curl -sSL -o ws2022.iso "https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US" || true
+          ls -la ws2022.iso
+          if [ $(stat -c %s ws2022.iso) -lt 3000000000 ]; then
+            curl -sSL -o ws2022.iso "https://software-static.download.prss.microsoft.com/sg/download/888969d5-f34g-4e03-ac9d-1f9786c66749/SERVER_EVAL_x64FRE_en-us.iso"
+          fi
+          ls -la ws2022.iso
+          qemu-img create -f qcow2 disk.qcow2 60G
+      - name: Run VM
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WORK: /mnt/vm
+        run: |
+          cd /mnt/vm
+          qemu-system-x86_64 -enable-kvm -machine q35 -cpu host -smp 4 -m 8192 \
+            -drive file=disk.qcow2,if=none,id=d0 -device ahci,id=ahci -device ide-hd,drive=d0,bus=ahci.0 \
+            -drive file=ws2022.iso,media=cdrom,if=none,id=cd0 -device ide-cd,drive=cd0,bus=ahci.1 \
+            -boot order=dc -nic user,model=e1000e \
+            -device qemu-xhci -device usb-tablet -vga std \
+            -rtc base=localtime \
+            -display none -qmp unix:/tmp/qmp.sock,server,nowait -daemonize
+          python3 $GITHUB_WORKSPACE/lab10/ctl.py
