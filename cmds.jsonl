@@ -1,8 +1,3 @@
-{"op": "wait", "s": 4, "id": 513}
-{"op": "shot", "name": "27_dns_add_features", "id": 514}
-{"op": "click", "x": 486, "y": 474, "id": 515}
-{"op": "move", "x": 1010, "y": 700, "id": 516}
-{"op": "wait", "s": 3, "id": 517}
 {"op": "shot", "name": "28_dns_selected", "id": 518}
 {"op": "click", "x": 570, "y": 564, "id": 519}
 {"op": "move", "x": 1010, "y": 700, "id": 520}
@@ -58,3 +53,8 @@
 {"op": "wait", "s": 3, "id": 570}
 {"op": "move", "x": 1010, "y": 700, "id": 571}
 {"op": "shot", "name": "37_wu_installing", "id": 572}
+{"op": "click", "x": 126, "y": 498, "id": 573}
+{"op": "wait", "s": 3, "id": 574}
+{"op": "click", "x": 148, "y": 258, "id": 575}
+{"op": "move", "x": 1010, "y": 700, "id": 576}
+{"op": "wait", "s": 5, "id": 577}
