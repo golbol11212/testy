@@ -471,3 +471,4 @@
 {"op": "type", "text": "cls; Get-HotFix | ft HotFixID,Description,InstalledOn -AutoSize; Get-CimInstance Win32_OperatingSystem | fl Caption,Version,BuildNumber; net user Administrator | findstr /i \"name last\"\n", "gap": 0.03, "id": 1391}
 {"op": "wait", "s": 15, "id": 1392}
 {"op": "shot", "name": "49_hotfix", "id": 1393}
+{"op": "quit", "id": 1394}
