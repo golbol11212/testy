@@ -1,1 +1,7 @@
-{"id":0,"op":"wait","s":1}
+{"id": 0, "op": "wait", "s": 1}
+{"op": "shot", "name": "01_boot_lang_initial", "id": 1}
+{"op": "key", "keys": ["tab"], "id": 2}
+{"op": "type", "text": "Ukrainian", "gap": 0.15, "id": 3}
+{"op": "wait", "s": 1, "id": 4}
+{"op": "key", "keys": ["tab"], "id": 5}
+{"op": "wait", "s": 1, "id": 6}
