@@ -446,3 +446,4 @@
 {"op": "wait", "s": 6, "id": 1366}
 {"op": "type", "text": "Test-Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending\"; Get-Process TiWorker -ErrorAction SilentlyContinue | select CPU\n", "gap": 0.03, "id": 1367}
 {"op": "wait", "s": 5, "id": 1368}
+{"op": "type", "text": "while(Get-Process TiWorker -EA 0){sleep 15}; Restart-Computer -Force\n", "gap": 0.05, "id": 1369}
