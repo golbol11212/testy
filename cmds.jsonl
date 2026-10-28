@@ -1,5 +1,3 @@
-{"op": "shot", "name": "21_wu_checking", "id": 486}
-{"op": "wait", "s": 60, "id": 487}
 {"op": "shot", "name": "22_wu_downloading", "id": 488}
 {"op": "click", "x": 540, "y": 748, "id": 489}
 {"op": "wait", "s": 3, "id": 490}
@@ -58,3 +56,5 @@
 {"op": "type", "text": "cls; Get-WindowsFeature DNS; Add-DnsServerPrimaryZone -Name \"igor.local\" -ZoneFile \"igor.local.dns\"; Add-DnsServerResourceRecordA -ZoneName \"igor.local\" -Name \"srv\" -IPv4Address 10.0.2.15; Resolve-DnsName srv.igor.local -Server 127.0.0.1\n", "gap": 0.03, "id": 543}
 {"op": "wait", "s": 12, "id": 544}
 {"op": "shot", "name": "35_dns_ps", "id": 545}
+{"op": "wait", "s": 20, "id": 546}
+{"op": "shot", "name": "35_dns_ps", "id": 547}
