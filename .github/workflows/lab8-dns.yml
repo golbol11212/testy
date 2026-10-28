@@ -1,0 +1,57 @@
+name: lab8-dns
+on:
+  push:
+    branches: [lab8-dns]
+permissions:
+  contents: write
+jobs:
+  dig:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq dnsutils xvfb xterm imagemagick xdotool fonts-dejavu-core >/dev/null
+      - name: Run dig and take screenshots
+        run: |
+          mkdir -p out
+          Xvfb :99 -screen 0 1600x1400x24 >/dev/null 2>&1 &
+          export DISPLAY=:99
+          sleep 2
+          n=0
+          shot () {
+            n=$((n+1))
+            cmd="$1"
+            bash -c "$cmd" > out/$n.txt 2>&1 || true
+            rows=$(( $(wc -l < out/$n.txt) + 3 ))
+            [ $rows -lt 8 ] && rows=8
+            cat > /tmp/s$n.sh <<EOS
+          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m\$ %s\n' "$cmd"
+          $cmd
+          printf '\033[1;32migor@ubuntu\033[0m:\033[1;34m~\033[0m\$ '
+          sleep 300
+          EOS
+            xterm -geometry 96x$rows -fa 'DejaVu Sans Mono' -fs 10 -bg '#300a24' -fg '#eeeeee' -title "igor@ubuntu: ~" -e bash /tmp/s$n.sh &
+            sleep 6
+            wid=$(xdotool search --class xterm | tail -1)
+            import -window "$wid" out/$n.png
+            kill %2 2>/dev/null || pkill xterm || true
+            sleep 1
+          }
+          shot "dig www.tk.te.ua"
+          shot "dig ukr.net NS"
+          shot "dig @a.root-servers.net . NS +norec"
+          shot "for s in a b c d e f g h i j k l m; do echo \$s.root-servers.net \$(dig +short \$s.root-servers.net A); done"
+          shot "dig tk.te.ua MX"
+          shot "dig +short mail.tk.te.ua"
+          dig -v > out/version.txt 2>&1; date -u > out/date.txt
+          ls -la out
+      - name: Save results
+        run: |
+          git config user.name "lab8-bot"; git config user.email "lab8@example.com"
+          git checkout --orphan lab8-dns-results
+          git rm -rf --cached . >/dev/null
+          git add out
+          git commit -qm "lab8 results"
+          git push -f origin lab8-dns-results
