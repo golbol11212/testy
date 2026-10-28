@@ -410,3 +410,13 @@
 {"op": "key", "keys": ["ret"], "id": 1330}
 {"op": "wait", "s": 60, "id": 1331}
 {"op": "move", "x": 1010, "y": 700, "id": 1332}
+{"op": "shot", "name": "42_dashboard_roles", "id": 1333}
+{"op": "click", "x": 77, "y": 146, "id": 1334}
+{"op": "move", "x": 1010, "y": 700, "id": 1335}
+{"op": "wait", "s": 8, "id": 1336}
+{"op": "shot", "name": "43_local_server", "id": 1337}
+{"op": "key", "keys": [["meta_l", "r"]], "id": 1338}
+{"op": "wait", "s": 2, "id": 1339}
+{"op": "type", "text": "ms-settings:windowsupdate\n", "id": 1340}
+{"op": "wait", "s": 6, "id": 1341}
+{"op": "move", "x": 1010, "y": 700, "id": 1342}
