@@ -11,3 +11,8 @@
 {"op": "click", "x": 770, "y": 551, "id": 10}
 {"op": "wait", "s": 4, "id": 11}
 {"op": "shot", "name": "03_install_now", "id": 12}
+{"op": "move", "x": 1010, "y": 760, "id": 13}
+{"op": "shot", "name": "03_install_now", "id": 14}
+{"op": "click", "x": 511, "y": 391, "id": 15}
+{"op": "move", "x": 1010, "y": 760, "id": 16}
+{"op": "wait", "s": 15, "id": 17}
