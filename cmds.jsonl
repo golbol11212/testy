@@ -30,3 +30,7 @@
 {"op": "click", "x": 770, "y": 557, "id": 29}
 {"op": "move", "x": 1010, "y": 760, "id": 30}
 {"op": "wait", "s": 4, "id": 31}
+{"op": "shot", "name": "06_install_type", "id": 32}
+{"op": "click", "x": 450, "y": 330, "id": 33}
+{"op": "move", "x": 1010, "y": 760, "id": 34}
+{"op": "wait", "s": 5, "id": 35}
