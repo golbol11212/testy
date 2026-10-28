@@ -1,14 +1,3 @@
-{"op": "type", "text": "Igor#Srv2026", "gap": 0.12, "id": 398}
-{"op": "key", "keys": ["ret"], "id": 399}
-{"op": "wait", "s": 10, "id": 400}
-{"op": "key", "keys": ["ret"], "id": 401}
-{"op": "wait", "s": 3, "id": 402}
-{"op": "type", "text": "Start#2026", "gap": 0.12, "id": 403}
-{"op": "key", "keys": ["ret"], "id": 404}
-{"op": "wait", "s": 10, "id": 405}
-{"op": "key", "keys": [["ctrl", "alt", "delete"]], "id": 406}
-{"op": "wait", "s": 4, "id": 407}
-{"op": "click", "x": 508, "y": 357, "id": 408}
 {"op": "move", "x": 1010, "y": 700, "id": 409}
 {"op": "wait", "s": 4, "id": 410}
 {"op": "type", "text": "Start#2026", "gap": 0.15, "id": 411}
@@ -58,3 +47,14 @@
 {"op": "move", "x": 1010, "y": 700, "id": 455}
 {"op": "wait", "s": 1, "id": 456}
 {"op": "shot", "name": "17_static_ip", "id": 457}
+{"op": "click", "x": 460, "y": 674, "id": 458}
+{"op": "wait", "s": 2, "id": 459}
+{"op": "click", "x": 390, "y": 611, "id": 460}
+{"op": "wait", "s": 3, "id": 461}
+{"op": "click", "x": 890, "y": 89, "id": 462}
+{"op": "wait", "s": 2, "id": 463}
+{"op": "click", "x": 500, "y": 400, "id": 464}
+{"op": "type", "text": "cls; ipconfig /all | findstr /i \"Description DHCP IPv4 Mask Gateway DNS\"; ping -n 2 google.com\n", "gap": 0.03, "id": 465}
+{"op": "move", "x": 1010, "y": 700, "id": 466}
+{"op": "wait", "s": 10, "id": 467}
+{"op": "shot", "name": "18_ipconfig_static", "id": 468}
