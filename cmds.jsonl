@@ -1,8 +1,3 @@
-{"op": "shot", "name": "burst/b145", "id": 331}
-{"op": "wait", "s": 2, "id": 332}
-{"op": "shot", "name": "burst/b146", "id": 333}
-{"op": "wait", "s": 2, "id": 334}
-{"op": "shot", "name": "burst/b147", "id": 335}
 {"op": "wait", "s": 2, "id": 336}
 {"op": "shot", "name": "burst/b148", "id": 337}
 {"op": "wait", "s": 2, "id": 338}
@@ -58,3 +53,8 @@
 {"op": "type", "text": "Igor#Srv2026", "gap": 0.12, "id": 388}
 {"op": "wait", "s": 1, "id": 389}
 {"op": "shot", "name": "14_change_password", "id": 390}
+{"op": "key", "keys": ["ret"], "id": 391}
+{"op": "wait", "s": 5, "id": 392}
+{"op": "shot", "name": "15_password_changed", "id": 393}
+{"op": "key", "keys": ["ret"], "id": 394}
+{"op": "wait", "s": 5, "id": 395}
