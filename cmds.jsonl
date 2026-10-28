@@ -16,3 +16,10 @@
 {"op": "click", "x": 511, "y": 391, "id": 15}
 {"op": "move", "x": 1010, "y": 760, "id": 16}
 {"op": "wait", "s": 15, "id": 17}
+{"op": "click", "x": 400, "y": 267, "id": 18}
+{"op": "move", "x": 1010, "y": 760, "id": 19}
+{"op": "wait", "s": 1, "id": 20}
+{"op": "shot", "name": "04_select_edition", "id": 21}
+{"op": "click", "x": 770, "y": 557, "id": 22}
+{"op": "move", "x": 1010, "y": 760, "id": 23}
+{"op": "wait", "s": 4, "id": 24}
