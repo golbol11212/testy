@@ -1,6 +1,3 @@
-{"op": "shot", "name": "22_wu_downloading", "id": 488}
-{"op": "click", "x": 540, "y": 748, "id": 489}
-{"op": "wait", "s": 3, "id": 490}
 {"op": "click", "x": 816, "y": 55, "id": 491}
 {"op": "wait", "s": 2, "id": 492}
 {"op": "move", "x": 1010, "y": 700, "id": 493}
@@ -58,3 +55,6 @@
 {"op": "shot", "name": "35_dns_ps", "id": 545}
 {"op": "wait", "s": 20, "id": 546}
 {"op": "shot", "name": "35_dns_ps", "id": 547}
+{"op": "type", "text": "dnsmgmt.msc\n", "gap": 0.03, "id": 548}
+{"op": "wait", "s": 6, "id": 549}
+{"op": "move", "x": 1010, "y": 700, "id": 550}
