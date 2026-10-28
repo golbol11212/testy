@@ -1,8 +1,3 @@
-{"op": "shot", "name": "09_oobe_password_empty", "id": 341}
-{"op": "click", "x": 376, "y": 307, "id": 342}
-{"op": "type", "text": "Start#2026", "id": 343}
-{"op": "click", "x": 376, "y": 354, "id": 344}
-{"op": "type", "text": "Start#2026", "id": 345}
 {"op": "move", "x": 1010, "y": 760, "id": 346}
 {"op": "wait", "s": 1, "id": 347}
 {"op": "shot", "name": "09_oobe_password", "id": 348}
@@ -58,3 +53,8 @@
 {"op": "type", "text": "Igor#Srv2026", "gap": 0.12, "id": 398}
 {"op": "key", "keys": ["ret"], "id": 399}
 {"op": "wait", "s": 10, "id": 400}
+{"op": "key", "keys": ["ret"], "id": 401}
+{"op": "wait", "s": 3, "id": 402}
+{"op": "type", "text": "Start#2026", "gap": 0.12, "id": 403}
+{"op": "key", "keys": ["ret"], "id": 404}
+{"op": "wait", "s": 10, "id": 405}
