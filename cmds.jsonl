@@ -1,11 +1,3 @@
-{"op": "shot", "name": "burst/b131", "id": 303}
-{"op": "wait", "s": 2, "id": 304}
-{"op": "shot", "name": "burst/b132", "id": 305}
-{"op": "wait", "s": 2, "id": 306}
-{"op": "shot", "name": "burst/b133", "id": 307}
-{"op": "wait", "s": 2, "id": 308}
-{"op": "shot", "name": "burst/b134", "id": 309}
-{"op": "wait", "s": 2, "id": 310}
 {"op": "shot", "name": "burst/b135", "id": 311}
 {"op": "wait", "s": 2, "id": 312}
 {"op": "shot", "name": "burst/b136", "id": 313}
@@ -58,3 +50,11 @@
 {"op": "click", "x": 899, "y": 670, "id": 360}
 {"op": "move", "x": 1010, "y": 760, "id": 361}
 {"op": "wait", "s": 30, "id": 362}
+{"op": "shot", "name": "10_lockscreen", "id": 363}
+{"op": "key", "keys": [["ctrl", "alt", "delete"]], "id": 364}
+{"op": "wait", "s": 3, "id": 365}
+{"op": "type", "text": "Start#2026", "gap": 0.12, "id": 366}
+{"op": "wait", "s": 1, "id": 367}
+{"op": "shot", "name": "11_login", "id": 368}
+{"op": "key", "keys": ["ret"], "id": 369}
+{"op": "wait", "s": 90, "id": 370}
